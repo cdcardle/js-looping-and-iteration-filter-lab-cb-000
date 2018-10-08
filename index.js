@@ -7,5 +7,5 @@ function findMatching(drivers, name) {
 // }
 
 functions matchName(drivers, name) {
-  return drivers.filter((driver) => driver.name === name.self)
+  return drivers.filter((driver) => driver.name.toLowerCase() === name.toLowerCase())
 }
